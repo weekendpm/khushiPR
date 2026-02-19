@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.b69b4854.css",
-    "main.js": "./static/js/main.0c670b7a.js",
-    "index.html": "./index.html",
-    "main.b69b4854.css.map": "./static/css/main.b69b4854.css.map",
-    "main.0c670b7a.js.map": "./static/js/main.0c670b7a.js.map"
+    "main.css": "/khushiPR/static/css/main.b69b4854.css",
+    "main.js": "/khushiPR/static/js/main.9c2e85ce.js",
+    "index.html": "/khushiPR/index.html",
+    "main.b69b4854.css.map": "/khushiPR/static/css/main.b69b4854.css.map",
+    "main.9c2e85ce.js.map": "/khushiPR/static/js/main.9c2e85ce.js.map"
   },
   "entrypoints": [
     "static/css/main.b69b4854.css",
-    "static/js/main.0c670b7a.js"
+    "static/js/main.9c2e85ce.js"
   ]
 }
