@@ -27,15 +27,28 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+        isScrolled 
+          ? 'bg-white/95 backdrop-blur-md shadow-elegant' 
+          : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold playfair">
-            <span className="text-black">KHUSHI</span>
-            <span className="text-[#d4af37] ml-2">MISHRA</span>
+          <Link to="/" className="group">
+            <div className="flex items-center space-x-3">
+              <div className="relative">
+                <span className={`text-2xl lg:text-3xl font-black playfair tracking-tight transition-colors duration-300 ${
+                  isScrolled ? 'text-black' : 'text-white'
+                }`}>
+                  KHUSHI
+                </span>
+                <span className="text-2xl lg:text-3xl font-black playfair tracking-tight text-[#d4af37] ml-2 relative">
+                  MISHRA
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#d4af37] group-hover:w-full transition-all duration-500"></span>
+                </span>
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
