@@ -52,16 +52,23 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`montserrat font-medium text-sm tracking-wide transition-colors duration-200 hover:text-[#d4af37] ${
-                  location.pathname === link.path ? 'text-[#d4af37]' : 'text-black'
+                className={`relative px-4 py-2 montserrat font-medium text-sm tracking-wide transition-all duration-300 rounded-lg group ${
+                  location.pathname === link.path 
+                    ? 'text-[#d4af37]' 
+                    : isScrolled 
+                      ? 'text-gray-700 hover:text-[#d4af37]' 
+                      : 'text-white hover:text-[#d4af37]'
                 }`}
               >
                 {link.name}
+                <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-[#d4af37] group-hover:w-3/4 transition-all duration-300 ${
+                  location.pathname === link.path ? 'w-3/4' : ''
+                }`}></span>
               </Link>
             ))}
           </nav>
