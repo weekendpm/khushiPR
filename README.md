@@ -157,20 +157,20 @@ Gray Scale:      #f8f8f8, #6b7280, #374151
 ### Install Dependencies
 ```bash
 cd /app/frontend
-yarn install
+npm install --legacy-peer-deps
 ```
 
 ### Run Development Server
 ```bash
 cd /app/frontend
-yarn start
+npm start
 # Opens http://localhost:3000
 ```
 
 ### Build for Production
 ```bash
 cd /app/frontend
-yarn build
+npm run build
 # Output: /app/frontend/build/
 ```
 
@@ -178,7 +178,7 @@ yarn build
 ```bash
 # Rebuild
 cd /app/frontend
-yarn build
+npm run build
 
 # Update docs folder
 rm -rf ../docs/*
