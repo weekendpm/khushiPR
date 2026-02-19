@@ -61,31 +61,48 @@ const Home = () => {
           <img
             src="https://customer-assets.emergentagent.com/job_visibility-strategy/artifacts/far1xxmq_Screenshot%202026-02-20%20at%201.20.22%E2%80%AFAM.png"
             alt="Khushi Mishra"
-            className="w-full h-full object-cover brightness-50"
+            className="w-full h-full object-cover scale-105 animate-[scaleIn_1s_ease-out]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-left">
-          <div className="max-w-3xl">
-            <h1 className="text-6xl md:text-8xl font-bold playfair text-white mb-6 leading-tight">
-              PR that gets people <span className="text-[#d4af37]">talking.</span>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-left">
+          <div className="max-w-4xl animate-[fadeInUp_1s_ease-out]">
+            <div className="mb-6 inline-block">
+              <span className="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-[#d4af37] text-sm font-semibold montserrat tracking-wider uppercase">
+                Public Relations Manager
+              </span>
+            </div>
+            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black playfair text-white mb-8 leading-[1.1]">
+              PR that gets people{' '}
+              <span className="relative inline-block">
+                <span className="text-[#d4af37] relative z-10">talking.</span>
+                <span className="absolute bottom-2 left-0 w-full h-4 bg-[#d4af37]/20 -z-10"></span>
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl montserrat text-gray-200 mb-8 leading-relaxed font-light">
+            <p className="text-xl lg:text-2xl montserrat text-gray-200 mb-10 leading-relaxed font-light max-w-3xl">
               Public Relations Manager working across government, celebrity, and brand ecosystems to build influence, credibility, and media presence.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-5">
               <Link to="/case-studies">
-                <Button className="bg-[#d4af37] text-black hover:bg-[#b8941f] px-8 py-6 text-lg montserrat font-semibold transition-all duration-300 transform hover:scale-105">
+                <Button className="bg-[#d4af37] text-black hover:bg-[#f4d03f] px-10 py-7 text-lg montserrat font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl rounded-lg">
                   View My Work
                 </Button>
               </Link>
               <Link to="/media">
-                <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg montserrat font-semibold transition-all duration-300">
+                <Button variant="outline" className="border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-black px-10 py-7 text-lg montserrat font-bold transition-all duration-300 rounded-lg">
                   Media Wins
                 </Button>
               </Link>
             </div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-3 bg-[#d4af37] rounded-full"></div>
           </div>
         </div>
       </section>
