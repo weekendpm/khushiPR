@@ -182,7 +182,7 @@ const CaseStudyDetail = () => {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <Link to="/case-studies" className="inline-flex items-center text-[#d4af37] montserrat font-semibold mb-4 hover:underline">
+          <Link to="/case-studies" className="inline-flex items-center text-white bg-black/50 hover:bg-[#d4af37] px-4 py-2 rounded-lg montserrat font-semibold mb-4 transition-all duration-300 backdrop-blur-sm">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Case Studies
           </Link>
