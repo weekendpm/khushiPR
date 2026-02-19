@@ -116,23 +116,18 @@ const Contact = () => {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold playfair text-black mb-6">
-            Available for <span className="text-[#d4af37]">Collaborations & PR Consulting</span>
+            Ready to <span className="text-[#d4af37]">transform your brand visibility?</span>
           </h2>
           <p className="text-xl montserrat text-gray-600 mb-8">
-            Let's transform your visibility together. From government communications to celebrity PR, I bring strategic thinking and proven results.
+            Let's discuss how strategic PR can make your brand impossible to ignore.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://wa.me/917976343276" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-[#25D366] text-white hover:bg-[#1ea952] px-8 py-6 text-lg montserrat font-semibold transition-all duration-300 transform hover:scale-105">
-                WhatsApp Me
-              </Button>
-            </a>
-            <a href="mailto:Khushianand007@gmail.com">
-              <Button variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg montserrat font-semibold transition-all duration-300">
-                Send Email
-              </Button>
-            </a>
-          </div>
+          <a href="https://wa.me/917976343276" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-[#25D366] text-white hover:bg-[#1ea952] px-12 py-8 text-xl montserrat font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <Phone className="mr-3 w-6 h-6" />
+              WhatsApp Me
+            </Button>
+          </a>
+          <p className="mt-6 montserrat text-gray-500 text-sm">Available for collaborations & PR consulting</p>
         </div>
       </section>
     </div>
