@@ -86,19 +86,45 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`block py-2 montserrat font-medium text-sm tracking-wide transition-colors duration-200 hover:text-[#d4af37] ${
-                  location.pathname === link.path ? 'text-[#d4af37]' : 'text-black'
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.name}
+          <nav className="lg:hidden fixed inset-0 z-50 bg-white">
+            <div className="flex items-center justify-between px-6 py-5 border-b border-gray-200">
+              <Link to="/" className="group" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="flex items-center space-x-3">
+                  <div className="relative">
+                    <span className="text-2xl font-black playfair tracking-tight text-black">
+                      KHUSHI
+                    </span>
+                    <span className="text-2xl font-black playfair tracking-tight text-[#d4af37] ml-2">
+                      MISHRA
+                    </span>
+                  </div>
+                </div>
               </Link>
-            ))}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-black hover:text-[#d4af37]"
+              >
+                <X size={24} />
+              </Button>
+            </div>
+            <div className="px-6 py-8 space-y-4 overflow-y-auto max-h-[calc(100vh-80px)]">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`block py-3 px-4 rounded-lg montserrat font-medium text-base transition-all duration-300 ${
+                    location.pathname === link.path
+                      ? 'bg-[#d4af37] text-black'
+                      : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
           </nav>
         )}
       </div>
