@@ -58,7 +58,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "craco build && npm run postbuild",
+    "postbuild": "cp build/index.html build/404.html",
     "test": "craco test"
   },
   "browserslist": {
