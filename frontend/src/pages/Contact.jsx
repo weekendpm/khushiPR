@@ -1,43 +1,8 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Instagram, Send, CheckCircle } from 'lucide-react';
+import React from 'react';
+import { Mail, Phone, MapPin, Linkedin, Instagram, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
-import { Input } from '../components/ui/input';
-import { Textarea } from '../components/ui/textarea';
-import { useToast } from '../hooks/use-toast';
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission (MOCK)
-    setTimeout(() => {
-      toast({
-        title: 'Message Sent Successfully!',
-        description: "Thank you for reaching out. I'll get back to you within 24 hours.",
-      });
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      setIsSubmitting(false);
-    }, 1000);
-  };
-
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
