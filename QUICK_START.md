@@ -92,7 +92,7 @@ git push origin main
 ```bash
 # 1. Edit files in /app/frontend/src/
 cd /app/frontend
-yarn build
+npm run build
 
 # 2. Update docs folder
 rm -rf ../docs/*
