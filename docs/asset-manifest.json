@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/khushiPR/static/css/main.b69b4854.css",
-    "main.js": "/khushiPR/static/js/main.9c2e85ce.js",
+    "main.css": "/khushiPR/static/css/main.9f4e507d.css",
+    "main.js": "/khushiPR/static/js/main.a4db3fd2.js",
     "index.html": "/khushiPR/index.html",
-    "main.b69b4854.css.map": "/khushiPR/static/css/main.b69b4854.css.map",
-    "main.9c2e85ce.js.map": "/khushiPR/static/js/main.9c2e85ce.js.map"
+    "main.9f4e507d.css.map": "/khushiPR/static/css/main.9f4e507d.css.map",
+    "main.a4db3fd2.js.map": "/khushiPR/static/js/main.a4db3fd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b69b4854.css",
-    "static/js/main.9c2e85ce.js"
+    "static/css/main.9f4e507d.css",
+    "static/js/main.a4db3fd2.js"
   ]
 }
